@@ -1,3 +1,5 @@
+This work involves analyzing the sentiment of various topics on Twitter. The sentiment is analyzed to look for trends between topics and over time. A package called textblob is used to evaluate the sentiment of tweets containing certain keywords related to clean energy. A neural network is then used to predict the future sentiment of keywords based on the past history of that word and other words.
+
 The main data pulling from Twitter is done in main.py.
 
 predict_multiple.py and predict_series.py do the prediction using a neural network.
