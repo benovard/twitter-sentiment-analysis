@@ -9,3 +9,5 @@ from this site: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.
 
 Any script that references 'climate_id.txt' through 'climate_id4.txt' is referencing these files.
 
+index.html contains a UI for graphing and viewing the prediction data.
+
