@@ -4,6 +4,7 @@ from tweepy import OAuthHandler
 import re
 import csv
 from datetime import timedelta
+from api_key import ApiKey
 
 
 """Main script to pull data from Twitter and run the sentiment analysis"""
@@ -19,10 +20,10 @@ class TwitterClient(object):
         Class constructor or initialization method.
         '''
         # keys and tokens from the Twitter Dev Console
-        consumer_key = '0k8cIuLYT2G0SQ6c79W1zxII6'
-        consumer_secret = 'ujZI9Juk3Y318zE4oFt3m25EYM9oxcSlQny4325A9SU2JrHFJr'
-        access_token = '900107220368539648-1lzgk0FNnZfRBj8oQu2xcThmzgUBeye'
-        access_token_secret = '9BPJ5wJvO6eCBiqx8HiI1Kdrte41tTwsM2X80MV64NhGA'
+        consumer_key = ApiKey.CONSUMER_KEY
+        consumer_secret = ApiKey.CONSUMER_SECRET
+        access_token = ApiKey.ACCESS_TOKEN
+        access_token_secret = ApiKey.ACCESS_TOKEN_SECRET
 
         # attempt authentication
         try:
